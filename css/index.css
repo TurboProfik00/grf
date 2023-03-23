@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: beige;
+    border-bottom: solid 3px brown;
+    height: 100px;
+}
+
+.li {
+    font-weight: 900;
+    color: darkblue;
+}
+
+.danger {
+    background-color: red;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.margin {
+    margin-left: 5px
+}
+
+input {
+    margin: 1px;
+}
+
+#answer {
+    background-color: khaki;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 3px;
+    width: 250px;
+}
+
+footer {
+    background-color: beige;
+    border-top: solid 3px brown;
+    height: 100px;
+}
+
+.light {
+    color: grey;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+    background-color: khaki;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.down {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.warning {
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.add {
+    background-color: aqua;
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.img-add {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.splash {
+    position: fixed;
+    top: 5%;
+    border: solid 3px blue;
+    height: 80%;
+}
+
+.add2 {
+    display: flex;
+    justify-content: center;
+}
+
+.img-add2 {
+    width: auto;
+    height: 30%;
+    border-radius: 20px;
+}
+
+.add-lock {
+    display: none;
+}

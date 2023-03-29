@@ -1,3 +1,44 @@
+//Создание рекламы
+let add2 = document.querySelector(`#add2`)
+
+    random = Math.floor(Math.random() * (4 - 1)) + 1;
+
+    console.log(random)
+
+    if(random == 1){
+        add2.innerHTML = 
+            `<div class="margin add splash ">
+            <h2>РЕКЛАМА!</h2>
+            <img class="img-add2" src="assets/add1.jpg" alt="add">
+            <p>Шампунь Жумайсынба, скажи перхоти Аллах-атбар! Покупайте!</p>
+            <button id="close-add">ЗАКРЫТЬ</button>
+            </div>`
+        } else if(random == 2){
+        add2.innerHTML =
+            `<div class="margin add splash ">
+            <h2>РЕКЛАМА!</h2>
+            <img class="img-add2" src="assets/add2.jpg" alt="add">
+            <p>Ешь! Пей! Жуй! Шампунь Жумайсынба! Покупайте!</p>
+            <button id="close-add">ЗАКРЫТЬ</button>
+            </div>`
+        } else if(random == 3){
+        add2.innerHTML =
+            `<div class="margin add splash ">
+            <h2>РЕКЛАМА!</h2>
+            <img class="img-add22" src="assets/add3.jpg" alt="add">
+            <p>Большой Банк - ББ. Мы вас точно не обманем! Берите кредиты под 160% годовых!</p>
+            <button id="close-add">ЗАКРЫТЬ</button>
+            </div>`
+        }
+
+
+//Закрытие рекламы
+let closeAdd = document.querySelector(`#close-add`)
+
+closeAdd.addEventListener(`click`, function(){
+    add2.classList.add(`add-lock`)
+});
+
 //Формула Герона (с проверкой в консоли)
 let n1 = document.querySelector(`#g1`)
 let n2 = document.querySelector(`#g2`)
@@ -87,9 +128,25 @@ button4.addEventListener(`click`, function(){
     }
 });
 
-let closeAdd = document.querySelector(`#close-add`)
-let add2 = document.querySelector(`.add2`)
+//Корни квадратного уравнения
+let n11111 = document.querySelector(`#g11111`)
+let n22222 = document.querySelector(`#g22222`)
+let n33333 = document.querySelector(`#g33333`)
+let button5 = document.querySelector(`#button5`)
+let answer11111 = document.querySelector(`.answer11111`)
+let answer22222 = document.querySelector(`.answer22222`)
 
-closeAdd.addEventListener(`click`, function(){
-    add2.classList.add(`add-lock`)
+button5.addEventListener(`click`, function(){
+    let a11111 = n11111.value
+    let a22222 = n22222.value
+    let a33333 = n33333.value
+
+    let m11111 = (Number(a22222)*-1 + Math.sqrt(a33333))/2*Number(a11111)
+    let m22222 = (Number(a22222)*-1 - Math.sqrt(a33333))/2*Number(a11111)
+
+    answer11111.innerHTML = ` `
+    answer11111.innerHTML = m11111
+
+    answer22222.innerHTML = ` `
+    answer22222.innerHTML = m22222
 });

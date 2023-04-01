@@ -30,6 +30,7 @@ let add2 = document.querySelector(`#add2`)
             <button id="close-add">ЗАКРЫТЬ</button>
             </div>`
         }
+        
 
 
 //Закрытие рекламы
@@ -149,4 +150,52 @@ button5.addEventListener(`click`, function(){
 
     answer22222.innerHTML = ` `
     answer22222.innerHTML = m22222
+});
+
+// Площадь паралеллограмма
+let n111111 = document.querySelector(`#g111111`)
+let n222222 = document.querySelector(`#g222222`)
+let button6 = document.querySelector(`#button6`)
+let answer111111 = document.querySelector(`.answer111111`)
+
+button6.addEventListener(`click`, function(){
+    let a111111 = n111111.value
+    let a222222 = n222222.value
+
+    let m111111 = a111111*a222222
+
+    answer111111.innerHTML = ` `
+    answer111111.innerHTML = `S = ` + Number(m111111)
+});
+
+// Площадь прямоугольного треугольника
+let n1111111 = document.querySelector(`#g1111111`)
+let n2222222 = document.querySelector(`#g2222222`)
+let button7 = document.querySelector(`#button7`)
+let answer1111111 = document.querySelector(`.answer1111111`)
+
+button7.addEventListener(`click`, function(){
+    let a1111111 = n1111111.value
+    let a2222222 = n2222222.value
+
+    let m1111111 = Number(a1111111*a2222222)/2
+
+    answer1111111.innerHTML = ` `
+    answer1111111.innerHTML = `S = ` + Number(m1111111)
+});
+
+// Площадь треугольника
+let n11111111 = document.querySelector(`#g11111111`)
+let n22222222 = document.querySelector(`#g22222222`)
+let button8 = document.querySelector(`#button8`)
+let answer11111111 = document.querySelector(`.answer11111111`)
+
+button8.addEventListener(`click`, function(){
+    let a11111111 = n11111111.value
+    let a22222222 = n22222222.value
+
+    let m11111111 = Number(a11111111*a22222222)/2
+
+    answer11111111.innerHTML = ` `
+    answer11111111.innerHTML = `S = ` + Number(m11111111)
 });
